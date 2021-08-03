@@ -1,7 +1,15 @@
-import React from 'react';
-import './home.scss';
+import React, { useEffect, useState } from 'react';
+import { PackService } from '../../service/pack';
+import './packPick.scss';
 
-const Home = () => {
+const PackPick = () => {
+    const [data, setData] = useState({});
+    useEffect(() => {
+        PackService.getPacks().then((data) => {
+            setData(data);
+            console.log(data);
+        });
+    }, []);
     return (
         <div className="home">
             <div className="homeCircleWrap">
@@ -23,4 +31,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default PackPick;
