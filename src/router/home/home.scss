@@ -1,89 +1,85 @@
-
-body{
-    background-color:#1A1F27;
+body {
+    background-color: #f2f4f5;
 }
 
-.home{
-    width:375px;
-    margin : 0 auto;
-    margin-top:100px;
+.home {
+    width: 375px;
+    margin: 0 auto;
+    margin-top: 100px;
     padding-top: 100px;
-    .homeCircleWrap{
-        width:80%;
-        margin:0 auto;
-        display:flex;
+    .homeCircleWrap {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
         text-align: center;
         justify-content: space-between;
         // width: 375px;
         // margin : 0 auto;
-        .homeCircle{
+        .homeCircle {
             border-radius: 50%;
             width: 60px;
-            height:60px;
-            &1{
+            height: 60px;
+            &1 {
                 border: 1px solid #ff0061;
                 background-color: #ff0061;
             }
-            &2{
-                border: 1px solid #3054FF;
-                background-color: #3054FF;
-
+            &2 {
+                border: 1px solid #3054ff;
+                background-color: #3054ff;
             }
-            &3{
-                border: 1px solid #1FCBF9;
-                background-color: #1FCBF9;
-
+            &3 {
+                border: 1px solid #1fcbf9;
+                background-color: #1fcbf9;
             }
         }
     }
-    .homeTitleWrap{
+    .homeTitleWrap {
         margin-top: 50px;
-        width:100%;
+        width: 100%;
         height: 130px;
-        display:flex;
+        display: flex;
         text-align: center;
         justify-content: center;
         align-items: center;
 
-        .homeTitle{
+        .homeTitle {
             font-size: 80px;
-            color:white;
+            color: black;
             font-weight: bold;
-            &Period{
+            &Period {
                 font-size: 120px;
-                color:#ff0061;
+                color: #ff0061;
             }
         }
     }
-    .homeSubTitleWrap{
-        width:100%;
+    .homeSubTitleWrap {
+        width: 100%;
         // height: 150px;
-        display:flex;
+        display: flex;
         text-align: center;
         justify-content: center;
         // align-items: center;
-        .homeSubTitle{
-            font-size:35px;
-            color:white;
+        .homeSubTitle {
+            font-size: 35px;
+            color: black;
             font-weight: 100;
-
         }
     }
-    .homeMainBtnWrap{
-        width:100%;
-        display:flex;
+    .homeMainBtnWrap {
+        width: 100%;
+        display: flex;
         text-align: center;
-        justify-content: center;   
+        justify-content: center;
         margin-top: 50px;
-        .homeMainBtn{
-            width : 150px;
-            padding : 15px 10px;
+        .homeMainBtn {
+            width: 150px;
+            padding: 15px 10px;
             border: 1px solid #ff0061;
-            background-color:#ff0061;
+            background-color: #ff0061;
             border-radius: 15px;
             font-weight: bold;
             font-size: 20px;
-            color:white;
+            color: white;
             cursor: pointer;
         }
     }

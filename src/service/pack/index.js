@@ -22,4 +22,13 @@ export const PackService = {
             return [];
         }
     },
+    getPackById: async (id) => {
+        try {
+            const res = await baseAPI.get(`api/v1/interviewer/pack/${id}`);
+            return res.data.data || [];
+        } catch (err) {
+            console.log('Pack 전체 조회 실패');
+            return [];
+        }
+    },
 };
