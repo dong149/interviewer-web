@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Pack from '../../components/pack';
+import { isEmpty } from '../../functions';
 import { PackService } from '../../service/pack';
 import './packPick.scss';
 
@@ -11,21 +13,13 @@ const PackPick = () => {
         });
     }, []);
     return (
-        <div className="home">
-            <div className="homeCircleWrap">
-                <div className="homeCircle homeCircle1"></div>
-                <div className="homeCircle homeCircle2"></div>
-                <div className="homeCircle homeCircle3"></div>
-            </div>
-            <div className="homeTitleWrap">
-                <span className="homeTitle">Interviewer</span>
-                <span className="homeTitle homeTitlePeriod">.</span>
-            </div>
-            <div className="homeSubTitleWrap">
-                <span className="homeSubTitle">온라인 면접 정복하세요!</span>
-            </div>
-            <div className="homeMainBtnWrap">
-                <button className="homeMainBtn">시작하기 {'>'}</button>
+        <div className="pack">
+            팩 선택하기
+            <div className="packItemWrap">
+                {!isEmpty(data) &&
+                    data.map((data, key) => {
+                        return <Pack data={data} key={key} />;
+                    })}
             </div>
         </div>
     );

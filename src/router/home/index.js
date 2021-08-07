@@ -1,7 +1,9 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import './home.scss';
 
 const Home = () => {
+    const history = useHistory();
     return (
         <div className="home">
             <div className="homeCircleWrap">
@@ -17,7 +19,16 @@ const Home = () => {
                 <span className="homeSubTitle">온라인 면접 정복하세요!</span>
             </div>
             <div className="homeMainBtnWrap">
-                <button className="homeMainBtn">시작하기 {'>'}</button>
+                <button
+                    className="homeMainBtn"
+                    onClick={() => {
+                        history.push({
+                            pathname: `/pack`,
+                        });
+                    }}
+                >
+                    시작하기 {'>'}
+                </button>
             </div>
         </div>
     );
