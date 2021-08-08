@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Pack from '../../components/pack';
+import Pack from '../pack';
 import { isEmpty } from '../../functions';
 import { PackService } from '../../service/pack';
 import './packPick.scss';
@@ -13,9 +13,12 @@ const PackPick = () => {
         });
     }, []);
     return (
-        <div className="pack">
-            팩 선택하기
-            <div className="packItemWrap">
+        <div className="packPick">
+            <div className="packPickTitleWrap">
+                <span className="packPickTitle">면접 질문 리스트</span>
+                <span className="packPickTitle packPickTitlePeriod">.</span>
+            </div>
+            <div className="packPickItemWrap">
                 {!isEmpty(data) &&
                     data.map((data, key) => {
                         return <Pack data={data} key={key} />;

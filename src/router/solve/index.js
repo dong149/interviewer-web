@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { isEmpty } from '../../functions';
 import { PackService } from '../../service/pack';
-// import './packPick.scss';
+import './solve.scss';
 
 const Solve = ({ match }) => {
     const packId = match.params.id;

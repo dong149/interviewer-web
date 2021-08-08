@@ -1,0 +1,32 @@
+body {
+    background-color: #f2f4f5;
+}
+
+.packPick {
+    display: table-cell;
+    width: 100vw;
+    height: 100vh;
+    vertical-align: middle;
+    background-image: inherit;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    .packPickTitleWrap {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+
+        .packPickTitle {
+            font-size: 30px;
+            font-weight: bold;
+            &Period {
+                font-size: 30px;
+                color: #ff0061;
+            }
+        }
+    }
+    .packPickSubTitleWrap {
+        .packSubTitle {
+        }
+    }
+}

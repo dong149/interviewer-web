@@ -8,9 +8,9 @@ const Pack = (props) => {
         <div
             className="pack"
             onClick={() => {
-                history.push({
-                    pathname: `/solve/${data.id}`,
-                });
+                // history.push({
+                //     pathname: `/solve/${data.id}`,
+                // });
                 // history.push({
                 //     pathname: `/summoner/name=${data.summonerName}`,
                 // });
