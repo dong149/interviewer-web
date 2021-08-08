@@ -40,7 +40,12 @@ const Home = () => {
                                     </span>
                                 </div>
                                 <div className="homeMainBtnWrap">
-                                    <DownDoubleArrow className="homeMainBtnSvg" />
+                                    <DownDoubleArrow
+                                        onClick={() => {
+                                            fullpageApi.moveSectionDown();
+                                        }}
+                                        className="homeMainBtnSvg"
+                                    />
                                     {/* <button
                                         className="homeMainBtn"
                                         onClick={() =>
