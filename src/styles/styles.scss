@@ -1,4 +1,20 @@
+@import './mixin.scss';
+$nanum-square: 'NanumSquare', sans-serif;
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
-// .body{
-//     background-color: #1FCBF9;
+body {
+    // background-color: #eaeaea;
+    background-color: rgb(28, 28, 31);
+    font-family: $nanum-square;
+    // margin: 0;
+}
+textarea {
+    font-family: $nanum-square;
+}
+// @include mobile {
+// }
+// @include tablet {
+// }
+
+// @include desktop {
 // }
