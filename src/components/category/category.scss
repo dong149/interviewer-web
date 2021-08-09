@@ -1,0 +1,17 @@
+.categoryWrap {
+    box-sizing: border-box;
+    margin-right: 10px;
+    padding-top: 20px;
+    .category {
+        box-sizing: border-box;
+        width: 100px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+        background-color: white;
+        color: #5e5e5e;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+}

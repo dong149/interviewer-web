@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router';
 import './home.scss';
 import { ReactComponent as WaveIcon } from '../../assets/wave.svg';
 import { ReactComponent as DownDoubleArrow } from '../../assets/fast-forward.svg';
 import ReactFullpage from '@fullpage/react-fullpage';
 import PackPick from '../../components/packPick';
+import { PackService } from '../../service/pack';
+import { CategoryService } from '../../service/category';
 const Home = () => {
     const history = useHistory();
+    const [packData, setPackData] = useState({});
+    const [categoryData, setCategoryData] = useState({});
+    useEffect(() => {
+        PackService.getPacks().then((data) => {
+            setPackData(data);
+        });
+        CategoryService.getCategories().then((data) => {
+            setCategoryData(data);
+        });
+    }, []);
     return (
         <ReactFullpage
             //fullpage options
@@ -69,7 +81,10 @@ const Home = () => {
                             </button> */}
                         </div>
                         <div className="section">
-                            <PackPick />
+                            <PackPick
+                                packData={packData}
+                                categoryData={categoryData}
+                            />
                         </div>
                     </ReactFullpage.Wrapper>
                 );

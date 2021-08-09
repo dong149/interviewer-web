@@ -1,0 +1,73 @@
+.packWrap {
+    // flex: 1 1 300px;
+    box-sizing: border-box;
+    .pack {
+        width: 320px;
+        height: 200px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+}
+
+.packCategoryWrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .packCategoryLeft {
+        display: flex;
+        align-items: center;
+        .packCategoryProfile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 5px;
+            background-color: yellow;
+            width: 30px;
+            height: 30px;
+            .packCategoryProfileText {
+                font-size: 25px;
+                color: white;
+            }
+        }
+        .packCastegorySubject {
+            font-size: 16px;
+            margin-left: 5px;
+            font-weight: bold;
+            color: #5e5e5e;
+        }
+    }
+
+    .packCategoryRight {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        .packCategoryName {
+            color: grey;
+            font-size: 13px;
+        }
+    }
+}
+
+.packTitleWrap {
+    width: 100%;
+    .packTitle {
+        text-align: left;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+.packDescriptionWrap {
+    width: 100%;
+    .packDescription {
+        text-align: left;
+        font-size: 15px;
+    }
+}
